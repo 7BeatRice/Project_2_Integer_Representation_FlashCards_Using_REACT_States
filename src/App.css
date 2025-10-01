@@ -1,0 +1,58 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "VT323", monospace;
+  background-image: linear-gradient(to right, #0c1372, #19218b, #232dbe);
+  height: 200vh;
+  width: 100vw;
+}
+.App {
+  display: flex;
+  flex-direction: column;   /* Stack children vertically */
+  align-items: center;      /* Center them horizontally */
+  justify-content: flex-start;
+  min-height: 200vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.header {
+  max-width: 80vw;
+  width: 100%;
+}
+
+.title, .overview, h3 {
+  color: white;
+  margin-bottom: 1rem;
+  text-shadow: 2px 1px 8px #000000;
+}
+
+.card{
+  max-width: 70vw;
+  width: 50vw;
+  max-height: 90vh;
+  height: 70vh;
+  margin-top:10vh;
+  border-radius: 15%;
+  border: 7px, solid, black;
+  box-shadow: 10px 10px black;
+  background-color: white;
+  color: black;
+}
+img{
+  width: 40%;
+  height: 25vh;
+}
+.next-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.2s;
+}
+
+.next-button:hover {
+  transform: scale(1.1);
+  color: #007bff;
+}
