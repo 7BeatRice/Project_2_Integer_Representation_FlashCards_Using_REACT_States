@@ -276,9 +276,9 @@ const cardList = [
 ];
 
     
-const CardList = ({ currentCard, side, onFlip }) => {
-  const card = cardList[currentCard][side];
-  
+const CardList = ({ cards, currentCard, side, onFlip }) => {
+  const card = cards[currentCard][side];
+
   return (
     <FlashCard
       onClick={onFlip}
